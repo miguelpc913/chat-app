@@ -10,7 +10,7 @@ const {addUser, getUser , getUsersInRoom , removeUser} = require("./utils/user")
 const app = express();
 const server = http.createServer(app)
 const io = socketio(server);
-const htmlDirectoryPath = path.join(__dirname , './public')
+const htmlDirectoryPath = path.join(__dirname , '../public')
 console.log(htmlDirectoryPath)
 app.use(express.static(htmlDirectoryPath))
 const port = process.env.port || 3000;
